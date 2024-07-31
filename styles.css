@@ -32,7 +32,7 @@ nav ul {
 }
 
 nav ul li {
-    margin-right: 20px;
+    margin-right: 40px;
 }
 
 nav ul li a {
@@ -46,7 +46,7 @@ nav ul li a:hover {
 }
 
 section {
-    margin: 20px 250px;
+    margin: 20px 400px;
     padding: 40px;
     background-color: #36a826;
     border-radius: 7px;
