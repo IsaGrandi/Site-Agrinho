@@ -5,6 +5,16 @@
     box-sizing: border-box;
 }
 
+:root {
+    --preto:#000000;
+    --background-image-color: linear-gradient(45deg, #65f558, #36ac2c);
+    --header-color:#206313;
+    --branco:#fff;
+    --section-color:#a2f46b;
+    --button-color:#95f113;
+    --header-border-color:#7aff6b;
+}
+
 /* Estilos gerais */
 body {
     font-family: Arial, sans-serif;
@@ -13,30 +23,41 @@ body {
     padding: 20px;
 }
 
-:root {
-    --preto:#000000;
-    --background-image-color: linear-gradient(45deg, #65f558, #36ac2c);
-}
-
 header {
-    background-color: #206313;
-    color: #fff;
+    background-color: var(--header-color);
+    color: var(--branco);
     padding: 60px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     border-radius: 5px;
-    border: 6px solid #7aff6b;
+    border: 6px solid var(--header-border-color);
 }
 
 
-.imagemAgrinho {
+.desenho-agrinho {
     width: 100%;
     padding: 20px 1px;
 }
 
+.trator2 {
+width: 30%;
+}
+
+.trator1 {
+    width: 30%;
+    }
+
+.campo1 {
+     width: 30%;
+     }
+
+.campo2 {
+    width: 30%;
+}    
+
 header h1 {
-    font-size: 40px;
+    font-size: 35px;
     margin-left: 60px;
     font-family: Georgia, Times, 'Times New Roman', serif
 }
@@ -59,7 +80,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #fff;
+    color: var(--branco);
     text-decoration: none;
     font-size: 25px;
 }
@@ -70,23 +91,23 @@ nav ul li a:hover {
 
 
 .botão-tec {
-    background-color:#aef10f;
+    background-color:var(--button-color);
     padding: 15px 40px;
-    margin-right: 70px;
+    margin-right: 15px;
     border-radius: 20px;
 }
 
 .botão-sus {
-    background-color:#aef10f;
+    background-color:var(--button-color);
     padding: 15px 25px;
-    margin-right: 70px;
+    margin-right: 15px;
     border-radius: 20px;
  }
 
 .botão-edu {
-     background-color:#aef10f;
+     background-color:var(--button-color);
      padding: 15px 43px;
-     margin-right: 70px;
+     margin-right: 15px;
      border-radius: 20px;
  }
 
@@ -94,16 +115,24 @@ nav ul li a:hover {
 section {
     margin: 40px 1px;
     padding: 500px;
-    background-color: #a2f46b;
+    background-color: var(--section-color);
     border-radius: 7px;
+    height: 300px;
+}
+
+
+.tec-texto-1 {
+ display: flex;
+ margin-right: 40px;
+    
 }
 
 footer {
     text-align: center;
     margin-top: 0px;
     padding: 0px;
-    background-color: #206313;
-    color: #fff;
+    background-color: var(--header-color);
+    color: var(--branco);
 }
 
 @media screen and (min-width: 1200px) {
