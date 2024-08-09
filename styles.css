@@ -13,6 +13,7 @@
     --section-color:#a2f46b;
     --button-color:#95f113;
     --header-border-color:#7aff6b;
+    --button-hover-color:#99ff40;
 }
 
 /* Estilos gerais */
@@ -40,20 +41,59 @@ header {
     padding: 20px 1px;
 }
 
-.trator2 {
-width: 30%;
+.informações-agrícolas {
+    text-align: center;
 }
 
-.trator1 {
-    width: 30%;
-    }
+section {
+    margin: 40px 6px;
+    padding: 50px;
+    background-color: var(--section-color);
+    border-radius: 7px;
+    display:flex;
+    text-align: left;
+    justify-content: space-between;
+}
+
+.section-tec {
+    flex-direction: row;
+    display: flex;
+}
+
+.section-sus {
+    align-items: center;
+}
+
+.Text-Tec, .Sus-texto-2, .Text-Educação {
+    flex: 1;
+    padding-right: 20px;
+    margin-right: 20px;
+    text-align: justify;
+}
+
+.trator1, .trator2  {
+width: 30%;
+display: row;
+flex-wrap: wrap;
+gap: 20px;
+flex-direction: column;
+padding: 20px;
+}
 
 .campo1 {
-     width: 30%;
+    width: 30%;
+    display:flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
      }
 
 .campo2 {
     width: 30%;
+    display:flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
 }    
 
 header h1 {
@@ -85,16 +125,16 @@ nav ul li a {
     font-size: 25px;
 }
 
-nav ul li a:hover {
-    text-decoration: underline;
-}
-
 
 .botão-tec {
     background-color:var(--button-color);
     padding: 15px 40px;
     margin-right: 15px;
     border-radius: 20px;
+}
+
+.botão-tec:hover {
+    background-color: var(--button-hover-color);
 }
 
 .botão-sus {
@@ -104,6 +144,10 @@ nav ul li a:hover {
     border-radius: 20px;
  }
 
+ .botão-sus:hover {
+    background-color: var(--button-hover-color);
+}
+
 .botão-edu {
      background-color:var(--button-color);
      padding: 15px 43px;
@@ -111,21 +155,10 @@ nav ul li a:hover {
      border-radius: 20px;
  }
 
-
-section {
-    margin: 40px 1px;
-    padding: 500px;
-    background-color: var(--section-color);
-    border-radius: 7px;
-    height: 300px;
+ .botão-edu:hover {
+    background-color: var(--button-hover-color);
 }
 
-
-.tec-texto-1 {
- display: flex;
- margin-right: 40px;
-    
-}
 
 footer {
     text-align: center;
@@ -135,7 +168,21 @@ footer {
     color: var(--branco);
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1024px) {
+    .titulo {
+      font-family:Georgia, 'Times New Roman', Times, serif;
+      font-size: 50px;
+      font-weight: 700;
 
-}
+    }
+    .botão-tec,
+    .botão-sus,
+    .botão-edu {
+      font-family:Georgia, 'Times New Roman', Times, serif;
+      font-size: 20px;
+      font-weight:400;
+
+    }
+  
+  }
     
